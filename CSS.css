@@ -2,13 +2,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: #333;
   background: #eee;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.1em;
   line-height: 1.25;
 }
 
 div{
   
-  width: 400px;
+  width: 1000px;
 position: absolute;
   left: 30%;
 
