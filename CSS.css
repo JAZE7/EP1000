@@ -1,0 +1,19 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #eee;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+div{
+  
+  width: 400px;
+position: absolute;
+  left: 30%;
+
+  
+}
+
+a{color: #ff1493;}
+a:hover{color:maroon;}
