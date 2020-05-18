@@ -11,13 +11,17 @@ div{
   
   width: 800px;
 position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: #eee;
   padding-left: 20px;
   padding-right: 20px;
 padding-top: 20px;
   padding-bottom: 20px;
-  margin: 0px auto 0px auto;
-  left: 20%;
+
   
 }
 
