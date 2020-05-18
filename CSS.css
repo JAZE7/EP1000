@@ -10,7 +10,7 @@ body {
 div{
   
   width: 800px;
-position: absolute;
+position: static;
   margin: auto;
   top: 0;
   right: 0;
