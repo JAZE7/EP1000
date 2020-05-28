@@ -127,13 +127,69 @@ Generative design is a useful tool to help us generate more complex designs.
 	<h3>Fidget Spinner Exercise</h3>
 	
 	<p>
-		I made a fidget spinner in Fusion 360, following the design shown in class.
+		I made a fidget spinner in Fusion 360, following the design shown in class. 
+		
+		<br>
+		The measurements for the hex nuts were obtained from the pdf on the
+		<a href="https://www.westfieldfasteners.co.uk/Datasheets/Nut_Hex_M.pdf">"website"</a>.
+		<br>
+		<img src="../pics/hexnut.png" height = "300px">
 		
 		<br>
 		
-		<br>
-		<br>
+		<ol>
+			
+			<li> Make a sketch on the top plane, making a two circles for the bearing in the center, 8mm and 22mm respectively. </li>
+			<li> Make an offset of 2mm for the outer circle to contain the bearing. </li>
+			<li> Draw a line of 45mm from the origin up to use as a temporary guide. </li>
+			<li> With the line as a guide, draw a hexagon using the edge polygon tool spanning 6.5mm (13mm divided by 2), with 6 sides.
+			<br>
+			<img src="../pics/hexagon.png" height = "300px"> </li>
+			
+			<li> Since the hexagon is not sitting on the line, use the move tool to reposition it.
+				<br>
+				<img src="../pics/move.png" height = "300px"> </li>
+			<li> Draw a circle around the hexagon to reach the end of the line used as a guide. There should be about 2mm
+			from the hexagon to the circle. </li>
+				
+					<li> Draw lines to connect the bearing to the circle at the end of the line.
+				<br><img src="../pics/lines.png" height = "300px"> </li>
+			
+			<li> Using the trim tool, remove the guide line in the center. </li>
+			
+	
+			
+			<li> Copy and paste the entire sketch twice, rotating at 120 degrees (360 divided by 3). 
+				<br>
+				<img src="../pics/pasted.png" height = "300px">
+			
+			</li>
+			
+			<li> Delete the center circles twice until only one version of the bearings are left. </li>
+			
+			<li> Hold shift to select all the shapes and extrude them, using a thickness of 8mm. </li>
+			
+			<li> Change the material and colour. </li>
+			
 		
+	</ol>
+		
+	
+	
+			Final Outcome:
+	<br>
+	<img src="../pics/fs.png" height = "300px">
+			
+			<br>
+	
+			
+	After extruding, I realised that there were a few small holes in the fidget spinner. Therefore, I used the design history and
+	went back to the sketch step before extruding. There, I found that the problem was some overlapping lines causing the small holes.
+	I then used the trim tool to remove them. 
+	<img src="../pics/before.png" height = "300px">
+	<img src="../pics/cutting.png" height = "300px">
+	<img src="../pics/after.png" height = "300px">
+	
 	</p>
 	
 	
