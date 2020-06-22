@@ -41,7 +41,7 @@ a.progress{
   margin-left: auto;
   margin-right: auto;
 
-  color: #ff1493;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
 
@@ -50,5 +50,7 @@ a.progress{
   text-transform: uppercase;
   font-family: "Arial", san-serif;
 
-  background: #221d57;
+  background: #ff1493;
 }
+
+a.progress:hover{color:maroon;}
