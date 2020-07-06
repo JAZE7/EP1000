@@ -75,19 +75,35 @@ I used to blocks to create a loop where the light blinked and changed the timing
   
 After adding two more lights to the circuit in series, the lights are dimmer as the voltage is divided between all 3. When it is connected in parallel, the LEDs are brighter as the same current is driving them. 
 <br>
-  <img src= "../pics/series.png" height = "400px" ><img src= "../pics/parallel.png" height = "400px" >
+  SERIES:
+  <BR>
+  <img src= "../pics/series.png" height = "200px" > PARALLEL:
+    <BR><img src= "../pics/parallel.png" height = "200px" >
 </p>
  
 <p>
  I rearranged the LEDs to connect to the boards using 6,7,8. Using the same blocks, I duplicated them and changed the pin to the corresponding for the different lights. They flashed in sequence when “Start Simulation” was selected.
   <br>
-  <img src= "../pics/sequence.png" height = "400px" >
+  <img src= "../pics/sequence.png" height = "300px" >
 </p>
 
 <p>
 After I added the switch to the circuit, I connected it to a pin and tried using the blocks to programme it to turn the lights on but faced a problem: I tried using the “Repeat while _” function but could not find the shape to fill the hexagon which would finish the command, to “accept the control of the switch”. I tried using the “Read digital pin” but it did not fit and I couldn’t put it in. I tried connecting the circuit differently, even trying to create a variable, but it did not fit as well. 
   <br>
 <img src= "../pics/variable.png" height = "400px" ></p>
+
+<p>
+  The problem was that I connected the resistor and wire wrongly and the voltage was not following through the switch (open), and the pin number was wrong (2, not 8).
+  <br>
+  <img src= "../pics/fixed.png" height = "350px" >
+  <br>
+  After fixing it, the lights turned on in sequence after the button was pressed. 
+</P>
+
+The circuit on the right is the one I followed:
+<br>
+
+ <img src= "../pics/1301_pushbuttonSW.png" height = "300px" >
    
 
 </body>
