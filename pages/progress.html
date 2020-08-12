@@ -159,6 +159,27 @@ For the flexible laser cut part, I will be using the design from this website <a
 
 <a href="https://www.epiloglaser.com/resources/sample-club/living-hinge-laser-cutting.htm">Plain design reference</a>
 
+<br>
+This is my first attempt at the flexture design:
+<br>
+<img src= "../pics/firstattempt.jpg" height = "400px" >
+<br>
+For my second attempt, I used card icons as the theme instead and made sure to line them up so that the smaller icon (diamond) was at the top, preventing it from breakage.
+<br>
+<img src= "../pics/secondattempt.jpg" height = "400px" >
+<br>
+(I used a hairline stroke of 0.001mm in illustrator, but changed it to a thicker stroke for journalling purposes).
+
+<p>I did a test cut of the curved walls portion I designed, using thicker 3.3mm wood and a height of 50mm. </p>
+
+<p>It worked! The piece was able to bend. Thus, I went on to make the other parts, using 50mm as the height. As the box needed to fit the arduino, I thought 
+	100mmx100mm was a good size for it. Therefore, the side of one wall would be 100mm, including 2 curved parts of the wall which were 25mm each after measuring.
+	Hence, the uncut wood part for each side would be 50mm.
+</p>
+
+Calculations based on measurements from test cut:
+<br>
+<img src= "../pics/paper.jpg" height = "400px" >
 
 <h2>Arduino attempts</h2>
 
@@ -178,6 +199,46 @@ For the flexible laser cut part, I will be using the design from this website <a
 
 </P>
 		
+
+
+
+<p>
+For the volume control knob, I designed one on Fusion 360, with a logo on the top. After showing it to my lecturer, I made the following changes: </p>
+		 
+		 
+		 
+		 <br>
+		 First version:
+		 <br>
+		 <iframe src="https://ichat817.autodesk360.com/shares/public/SH56a43QTfd62c1cd968cb773f529e0eb4ca?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+		
+		
+		<br>
+		 
+		 
+		 I measured the rotary encoder so that I could figure out how big the button should be and dimensions for the holder of the rotary encoder, as well as the size of the hole for the lid.
+		 <br>
+		 <img src= "../pics/measure.jpg" height = "400px" >
+		  <br>
+		 These are the dimensions:
+		 <br>
+		 Button - Diameter 6mm, Height 10 mm. Base (bottom half under push button part) height 15 mm. Length 21-40 mm (including allowance for the wire sticking out at the side). From the top 6mm sunken in.
+		
+		 <ol>
+		  <li>I changed the dimensions of the entire knob, fitting it to a smaller size that would accomodate the rotary encoder.</li>
+		  <li>After changing the size, I fixed the rest of the parts that got messed up usign Design History.</li>
+		  <li>I removed the logo and the finger grooves to simplify it.</li>
+		  <li>Using a new sketch, I extruded a hollow pillar that reached all the way to the roof of the knob, adding a cut in the circle to fit the flat side of the rotary encoder.</li>
+		 <li>I used revolve to make a wrap around the pillar to give it support. </li>
+		 <li> Lastly, to make it fit the rotary encoder, I used extrude to remove 10mm of the triangular part as well as 0.5mm to fit the bottom half of the push button part in the rotary encoder which is
+		 slightly bigger. </li>
+		 </ol>
+		 
+		 After changes and rescaling to fit the rotary encoder:
+		 <br>
+		 <iframe src="https://ichat817.autodesk360.com/shares/public/SH56a43QTfd62c1cd96874e2d925106cc79e?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+		 <br>
+		 
 
 However, I ran into problems
 </div>
