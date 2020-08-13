@@ -44,12 +44,10 @@ Pain point/reason for product: Due to the length of my Macbook charger cable and
 
 </ol>
 
-		<h1> Week One</h1>
-
 <h1> Decision for Project</h1>
 
 <p>
-	Mr Dorville provided a list of sample projects we could use and modify and I was interested in the PlexiCLock, Timelapse Motor and Volume Control Knob in particular. I decided to choose the volume control knob as it was my favorite and simpler compared to the other two. The components are also easier to obtain.
+	Mr Dorville provided a list of sample projects we could use and modify and I was interested in the PlexiCLock, Timelapse Motor and Volume Control Knob in particular. I decided to choose the <strong>volume control knob</strong> as it was my favorite and simpler compared to the other two. The components are also easier to obtain.
 </p>
 
 <p>
@@ -97,7 +95,7 @@ Outer Casing:
 
 
 Instead of doing a <a href="https://www.youtube.com/watch?v=oe0f7288Enw">knurl surface</a> on the side of the knob, I will make grooves for the fingers on
-	the sides. 
+	the sides for ergonomics.
 	
 	</P>
 	
@@ -132,7 +130,7 @@ After consulting my lecturer, here are the improvements and changes made:
 	
 	<br>
 	For the wood, there are a few different thickness available in the lab: 2.5mm, 3mm, 4mm, and 5mm. I will be using 2.5mm so that the curve will 
-	have a lower risk of breaking. 
+	have a lower risk of breaking, but this is subject to change based on the testing and result of the flexture curve design.
 </P>
 
 		<h2>Bill of Materials Final</h2>
@@ -160,55 +158,76 @@ For the flexible laser cut part, I will be using the design from this website <a
 <a href="https://www.epiloglaser.com/resources/sample-club/living-hinge-laser-cutting.htm">Plain design reference</a>
 
 <br>
-This is my first attempt at the flexture design:
+This is my first attempt at the flexture design, with reference to online designs:
 <br>
-<img src= "../pics/firstattempt.jpg" height = "400px" >
+<img src= "../pics/firstattempt.png" height = "400px" >
 <br>
 For my second attempt, I used card icons as the theme instead and made sure to line them up so that the smaller icon (diamond) was at the top, preventing it from breakage.
 <br>
-<img src= "../pics/secondattempt.jpg" height = "400px" >
+<img src= "../pics/secondattempt.png" height = "400px" >
 <br>
 (I used a hairline stroke of 0.001mm in illustrator, but changed it to a thicker stroke for journalling purposes).
 
 <p>I did a test cut of the curved walls portion I designed, using thicker 3.3mm wood and a height of 50mm. </p>
 
+
+<img src= "../pics/flat.jpg" height = "200px" >
+<img src= "../pics/testpiece.jpg" height = "200px" >
+<img src= "../pics/curve.jpg" height = "200px" >
+
 <p>It worked! The piece was able to bend. Thus, I went on to make the other parts, using 50mm as the height. As the box needed to fit the arduino, I thought 
 	100mmx100mm was a good size for it. Therefore, the side of one wall would be 100mm, including 2 curved parts of the wall which were 25mm each after measuring.
-	Hence, the uncut wood part for each side would be 50mm.
+	Hence, the uncut wood part for each side would be 50mm. I adapted the design to the long piece for the wall, removing the line at the ends and using a short line to mark where it ends. 
 </p>
 
 Calculations based on measurements from test cut:
 <br>
 <img src= "../pics/paper.jpg" height = "400px" >
 
-<h2>Arduino attempts</h2>
+<p>
 
-<P>
-	For the volume control knob programming,
-	I tried linking up the arduino board to the rotary encoder, and using the codes provided by several websites to programme it. 
-	Although I tried different codes from different websites, they didn’t work because I was using the Arduino Uno CDC, while 
-	the boards used in the tutorials online were the Pro Micro and Nano. I received error messages telling me that HID is needed for volume control.
-	For codes which I successfully uploaded onto the board, no output was given when testing it. I even tried plugging it into a Windows computer, but to no avail. 
-	I also checked with my dad and he confirmed that HID is needed for volume control, saying that I needed to change the board. Thankfully, my lecturer assured me that amongst the two alternatives (Arduino Pro Micro (ATMega32U4) or the Digispark (ATTiny85)), the Digispark was available at FABLAB. 
-	<br>
-	My wiring attempt:
-	<br>
-<img src= "../pics/wiring.jpg" height = "400px" >
-	
+	Based on these measurements, I was able to start drawing out the base accurately. I added holes with 2mm diameter to fit toothpicks to align the pieces to stick together. 
+</p>
 
+<img src= "../pics/curvedsmall.png" height = "200px" >
+<br>
+With this design, I lasercut and tried it out. 
 
-</P>
-		
+<br>
+<img src= "../pics/one.jpg" height = "200px" >
+<br>
+<img src= "../pics/two.jpg" height = "200px" >
+
+<br>
+Next, I proceeded to draw out the lid, after measuring the rotary encoder, since it fit. I also changed the design of the lock and made the curved side rounder for future use. 
+<br>
+<img src= "../pics/finallaser.png" height = "400px" >
 
 
 
 <p>
-For the volume control knob, I designed one on Fusion 360, with a logo on the top.
+For the volume control knob, I designed one according to my original design, on Fusion 360, with a logo on the top.
+
+<br>
+
+<ol>
+		  <li>Creating a sketch, I drew out a circle of 100mm (subject to change) and extruded it.</li>
+		  <li>After extruding up, I created a smaller circle on the bottom to create a hollow using extrude again.</li>
+		  <li>I used fillet to round the top edge.</li>
+		  <li>Creating a sketch on each side, I made a wide oval and rotated it at an angle, placing it at the corner of each side.</li>
+		 <li>Next, I used extrude to cut the finger grooves and repeated that for each side.</li>
+		 <li> Lastly, I imported my logo from my AI file and placed it on the top, using extrude in the negative space to make it sunken in. </li>
+		 </ol>
 	
 
 		 First version:
 		 <br>
 		 <iframe src="https://ichat817.autodesk360.com/shares/public/SH56a43QTfd62c1cd968cb773f529e0eb4ca?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+		 <br>
+I used ABS WHITE plastic so it would look close to the real version after printing. 
+<br>
+		 <img src= "../pics/abs.png" height = "400px" >
 		
 		
 		<br>
@@ -218,8 +237,16 @@ After showing it to my lecturer, I made the following changes: </p>
 		  <li>I will be printing it upside down so that no support will be needed to hold it up.</li>
 		  <li>I removed the logo on the top and the finger grooves to simplify it.</li>
 		  <li>The width of the knob would be changed to about 2mm so it would take less time to print.</li>
-		 <li> I will add a hollow pillar on the inside to allow it to hold and turn the rotary encoder, with a base wrapping around at the top to secure it. </li>
+		 <li> I will add a hollow pillar on the inside to allow it to hold and turn the rotary encoder, with a base wrapping around at the top to secure it. 
+
+
+		 </li>
 		 </ul>
+
+This is the underside of the knob where the rotary encoder will fit:
+		 <br>
+	 <img src= "../pics/triangle.png" height = "400px" >
+
 		 
 		 
 		 <br>
@@ -238,7 +265,9 @@ After showing it to my lecturer, I made the following changes: </p>
 		  <li>After changing the size, I fixed the rest of the parts that got messed up usign Design History.</li>
 		  <li>I removed the logo and the finger grooves to simplify it.</li>
 		  <li>Using a new sketch, I extruded a hollow pillar that reached all the way to the roof of the knob, adding a cut in the circle to fit the flat side of the rotary encoder.</li>
-		 <li>I used revolve to make a wrap around the pillar to give it support. </li>
+		 <li>I added a base around the pillar to secure it and give it support, by sketching a triangle next to the pillar and using Revolve.
+<br>
+	 <img src= "../pics/filletunder.png" height = "400px" > </li>
 		 <li> Lastly, to make it fit the rotary encoder, I used extrude to remove 10mm of the triangular part as well as 0.5mm to fit the bottom half of the push button part in the rotary encoder which is
 		 slightly bigger. </li>
 		 </ol>
@@ -248,6 +277,31 @@ After showing it to my lecturer, I made the following changes: </p>
 		 <iframe src="https://ichat817.autodesk360.com/shares/public/SH56a43QTfd62c1cd96874e2d925106cc79e?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 		 <br>
 		 
+
+
+		 <h2>Arduino attempts</h2>
+
+<P>
+	For the volume control knob programming,
+	I tried linking up the arduino board to the rotary encoder, and using the codes provided by several websites to programme it. 
+	Although I tried different codes from different websites, they didn’t work because I was using the Arduino Uno CDC, while 
+	the boards used in the tutorials online were the Pro Micro and Nano. I received error messages telling me that HID is needed for volume control.
+<br>
+<img src= "../pics/arduino1.png" height = "200px" >
+<br>
+
+<img src= "../pics/arduino1.png" height = "200px" >
+<br>
+	For codes which I successfully uploaded onto the board, no output was given when testing it. I even tried plugging it into a Windows computer, but to no avail. 
+	I also checked with my dad and he confirmed that HID is needed for volume control, saying that I needed to change the board. Thankfully, my lecturer assured me that amongst the two alternatives (Arduino Pro Micro (ATMega32U4) or the Digispark (ATTiny85)), the Digispark was available at FABLAB. 
+	<br>
+	My wiring attempt:
+	<br>
+<img src= "../pics/wiring.jpg" height = "400px" >
+	
+
+
+</P>
 
 However, I ran into problems
 </div>
