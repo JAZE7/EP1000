@@ -209,7 +209,7 @@ Next, I proceeded to draw out the lid, after measuring the rotary encoder, since
 <p>
 	
 	Since I made a mistake with the cutting, instead of wasting wood and recutting the whole piece, I trimmed off a portion to get a rectangular piece of wood which fit
-	inbetween the gap in the wall and glued it there. I also used toothpicks to align the wood pieces and glued them together. Next, I trimmed the excess off
+	in between the gap in the wall and glued it there. I also used toothpicks to align the wood pieces and glued them together. Next, I trimmed the excess off
 	the toothpicks and sanded them down. I lasercut the lid and did the same. With that, my case was completed. 
 	
 	
@@ -304,6 +304,21 @@ This is the underside of the knob where the rotary encoder will fit:
 	<img src= "../pics/curastl.png" height = "200px" >
 	</p>
 
+<p>
+	
+	After 3D printing it, I realised that I made some minor mistakes with the calculation of the height of the rotary encoder button. Therefore, the height of the pillar in the cap holding it was wrong. With the help of my muscular dad, I removed a portion of it with pliers and sanded it smooth.
+	
+	<br>
+	<img src= "../pics/snip.jpg" height = "200px" >
+	<br>
+	
+	I also sanded the base and the toothpicks in the lid using sandpaper and small files. 
+	<br>
+	<img src= "../pics/sand1.jpg" height = "200px" ><img src= "../pics/sand2.jpg" height = "200px" >
+	
+	
+</p>
+
 
 		 <h2>Arduino attempts</h2>
 
@@ -331,28 +346,57 @@ This is the underside of the knob where the rotary encoder will fit:
 
 
 <P>
-	After I received the Digispark from my lecturer, I also obtained some female to female wires to wire the digispark to the rotary encoder. I <a href="https://www.youtube.com/watch?v=dvW8Q2Zbia8>"soldered the Digigspark to the headers</a>
+	After I received the Digispark from my lecturer, I also obtained some female to female wires to wire the digispark to the rotary encoder. I <a href="https://www.youtube.com/watch?v=dvW8Q2Zbia8">soldered the Digigspark to the headers</a>
 	so I would be able to wire it. 
 	
 	
 
-However, I ran into problems
+However, I ran into many problems as my computer is a Mac. I faced problems with the Arduino program drivers, codes and others elements. I downloaded and tested many different codes from different websites and got close a few times but was unable to show the output of the volume control when turning the rotary encoder. I also tried downloading the all the programs, codes and libraries on my father’s Windows computer, to no avail. I finally succeeded with one website after many attempts. The volume of the sound could change after turning the rotary encoder on my Mac.
 	
-	as my computer is a Mac, I faced many problems with the Arduino program drivers, codes and others elements. I downloaded and tested many different codes from different websites and got close a few times but was unable to show the output of the volume control when turning the rotary encoder. I also tried downloading the all the programs, codes and libraries on my father’s Windows computer, to no avail. I finally succeeded with one website after many attempts. The volume of the sound could change after turning the rotary encoder on my Mac.
+	<br>
+<img src= "../pics/codeup.png" height = "400px" >
+	<br>
+<img src= "../pics/keyboard.png" height = "400px" >
+	<br>
+	
+	
+	</p>
+
+<p>
 
 Final how-to on setting up:
 (the code that worked for me)
+</p>
 
-Open the Arduino program and download the Digispark libraries under Manage Libraries.
-
-Download the 2 codes and files and open them. 
-
-Link the Settings.h file by importing the file and selecting the file location.
-
-Make sure to select Digispark as the board under Tools. 
-
+<p>
+<ol>
 	
+	<li>Open the Arduino program and download the Digispark libraries under Manage Libraries.</li>
+
+	<li>Download the 2 codes and files and open them. </li>
+	
+	<li> Download the zip file containing TrinketHIDCombo from <a href="https://github.com/adafruit/Adafruit-Trinket-USB">Adafruit's GitHub site. </a>
+
+	<li>Link the Settings.h file by importing the file and selecting the file location.</li>
+
+	<li>Make sure to select Digispark as the board under Tools. </li>
+
+</ol>
 	</p>
+
+
+		 <h2>Final Assembly</h2>
+
+<p>
+	After all the parts were done, I made a makeshift stand out of bottle caps and the leftover wood pieces to elevate the rotary encoder to the opening of the lid. I used masking tape to secure it better, and blue tac to hold it in place. The reason why I did this and did not glue the parts together is so that it will be easy to take apart to return the parts to the school after the project is over, without ruining the box made with the flexture cut design. 
+	
+<img src= "../pics/temp.jpg" height = "200px" >
+<img src= "../pics/toop.jpg" height = "200px" >
+</p>
+
+
+Final Video Demo.
+
 </div>
 
 
